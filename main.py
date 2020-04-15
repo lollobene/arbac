@@ -1,10 +1,10 @@
-import arbac_parser
+import parser
 import arbac
 
 if __name__ == '__main__':
 
     for i in range(1, 9):
-        parser = arbac_parser.Parser()
+        parser = parser.Parser()
         parser.open_file(i)
         my_policy = arbac.Arbac(
             parser.get_roles(),
